@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель керування</title>
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body class="<%= theme %>">
+    <h1>Привіт, <%= username %>!</h1>
+    <p>Це захищена панель керування.</p>
+    <form action="/logout" method="POST">
+        <button type="submit">Вийти</button>
+    </form>
+</body>
+</html>

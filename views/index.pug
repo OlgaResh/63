@@ -1,0 +1,14 @@
+doctype html
+html(lang="uk")
+  head
+    meta(charset="UTF-8")
+    title Головна сторінка
+    link(rel="icon" href="/favicon.ico")
+  body(class=theme)
+    h1 Вітаємо на головній сторінці
+    p Поточна тема: #{theme}
+    form(action="/set-theme", method="POST")
+      select(name="theme")
+        option(value="light") Світла
+        option(value="dark") Темна
+      button(type="submit") Зберегти тему
